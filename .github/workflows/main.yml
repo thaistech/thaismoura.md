@@ -21,8 +21,8 @@ jobs:
           echo "Aqui você pode ver meus projetos e contribuições no GitHub." >> README.md
           echo "" >> README.md
           echo "## Projetos em Destaque" >> README.md
-          echo "- [Projeto 1: thaismoura](https://github.com/thaistech/thaismoura)" >> README.md
-          echo "- [Projeto 2: Outro Projeto](https://github.com/thaistech/outro-projeto)" >> README.md
+          echo "- [Projeto 1: thaismoura](https://github.com/thaistech/thaismoura.md)" >> README.md
+         
 
       # Step to commit and push the updated README
       - name: Commit and push the updated README
@@ -31,7 +31,7 @@ jobs:
           git config --global user.email "thaismoura83@hotmail.com"
           git add README.md
           git commit -m "Atualizar README.md com projetos e informações" || echo "Nada para commitar"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/thaistech/thaismoura.git HEAD:main  # Altere 'main' para a sua branch, se necessário
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/thaistech/thaismoura.md HEAD:main  # Altere 'main' para a sua branch, se necessário
 
       # Step to deploy to GitHub Pages
       - name: Publish to GitHub Pages
