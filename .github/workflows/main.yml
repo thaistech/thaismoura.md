@@ -28,4 +28,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./thaismoura.md  # Certifique-se de que esse diretório contém os arquivos para GitHub Pages
-          target_branch: gh-pages  # Especificando o branch de destino para GitHub Pages
+          publish_branch: gh-pages  # Especificando o branch de destino para GitHub Pages
