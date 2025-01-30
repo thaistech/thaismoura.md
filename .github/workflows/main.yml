@@ -15,7 +15,7 @@ jobs:
 
       - name: Configurar Git
         run: |
-          git config --global user.name "Thais"
+          git config --global user.name "thaistech"
           git config --global user.email "thaismoura83@hotmail.com"
 
       # (Opcional) Limpar o diretório de trabalho
@@ -27,5 +27,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./thaistech/thaistech  # Certifique-se de que esse diretório contém os arquivos para GitHub Pages
+          publish_dir: ./thaistech  # Certifique-se de que esse diretório contém os arquivos para GitHub Pages
           publish_branch: gh-pages  # Especificando o branch de destino para GitHub Pages
